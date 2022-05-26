@@ -58,5 +58,5 @@ if __name__ == "__main__":
 	t = threading.Thread(target=scheduler.run)
 	t.start()
 
-	context = ('server.crt', 'server.key')
-	app.run(host='0.0.0.0', port=8443, debug=True, ssl_context=context)
+	#context = ('server.crt', 'server.key')
+	app.run(host='0.0.0.0', port=8000, debug=True)
